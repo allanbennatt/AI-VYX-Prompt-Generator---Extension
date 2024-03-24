@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "AI VYX Prompt Generator",
+  "version": "1.0",
+  "description": "AI VYX Prompt Generator, your gateway to a world of AI-driven possibilities. Our suite of cutting-edge AI VYX Prompt Generator is designed to empower you, whether you’re an enthusiast, a professional, or an entrepreneur. Discover how these tools can transform your AI journey.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "contact@aivyx.com",
+      "strict_min_version": "68.0"
+    }
+  }
+}

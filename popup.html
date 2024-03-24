@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI VYX Prompt Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="PromptGenerator" class="PromptGeneratorClass no-select">
+    <h2 class="maintitle" style="text-align: center;">AI Prompt Generator <span style="font-size: 60%;"> | Version - 1.0</span></h2>
+    <table class="tooltable">
+      <tr>
+        <td>
+          <div id="mode">
+            <p>Select a mode:</p> <select id="mode-select">
+              <option value="">--Select a mode--</option>
+              <option value="image">Image / Art</option>
+              <option value="writing">Writing / Content</option>
+              <option value="custom">Custom</option>
+            </select>
+          </div>
+        </td>
+        <td>
+          <div id="category">
+            <p>Select a category:</p> <select id="category-select"> </select>
+          </div>
+        </td>
+        <td>
+          <div id="subcategory">
+            <p>Select a subcategory:</p> <select id="subcategory-select"> </select>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="model" style="display: none;">
+            <p>Select a model:</p> <select id="model-select"> </select>
+          </div>
+        </td>
+        <td>
+          <div id="language" style="display: none;">
+            <p>Select a language:</p> <select id="language-select"> </select>
+          </div>
+        </td>
+        <td>
+          <div id="voicetone" style="display: none;">
+            <p>Select a voice tone:</p> <select id="voicetone-select"> </select>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="writingstyle" style="display: none;">
+            <p>Select a writing style:</p> <select id="writingstyle-select"> </select>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <table class="tooltable">
+      <tr>
+        <td>
+          <div id="template" style="display: none;">
+            <p>Fill in the template:</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <table class="tooltable">
+      <tr>
+        <td>
+          <div id="prompt" style="display: none;">
+            <p>Here is your prompt for AI:</p> <textarea id="prompt-text" readonly></textarea> <button id="copy-button">Copy to Clipboard</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
